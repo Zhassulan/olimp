@@ -100,13 +100,6 @@ class Calc {
 		}
 	}
 	
-	private function convertFloat($floatAsString)	{
-		$norm = strval(floatval($floatAsString));
-		if (($e = strrchr($norm, 'E')) === false) {
-			return $norm;
-		}
-		return number_format($norm, -intval(substr($e, 1)));
-	}
 	
 	/**
 	 * Метод умножений коэффициентов и вычисления вознаграждения
